@@ -2,7 +2,7 @@ body {
   color: #000000;
   width: 100%;
   background-color: #ffffff;
-  background-image: url(/img/el5.png), url(/img/el1.png), url(/img/el2.png);
+  background-image: url(../img/el5.png), url(../img/el1.png), url(../img/el2.png);
   background-size: cover, auto, auto;
   background-repeat: repeat, no-repeat, no-repeat;
   background-position: center, top 100% left 10%, top 0 left 50%;
@@ -22,7 +22,7 @@ html {
 }
 @media screen and (max-width: 480px) {
   body {
-    background-image: url(/img/el5.png), url(/img/el1.png);
+    background-image: url(../img/el5.png), url(../img/el1.png);
   }
 }
 
