@@ -18,12 +18,15 @@ html {
 
 @media screen and (max-width: 870px) {
   body {
-    background-position: center, top 100% left 10%, top 0 left 0;
+    background-image: url(../img/el5.png);
+    background-position: center;
   }
 }
 @media screen and (max-width: 480px) {
   body {
-    background-image: url(../img/el5.png), url(../img/el1.png);
+    background-image: url(../img/el5.png), url(../img/c-ug.png),
+      url(../img/c-l.png);
+    background-position: center, top 0 left 0, top 50% right 0;
   }
 }
 
@@ -73,18 +76,23 @@ main {
   padding-right: 15px;
   margin: 0 auto;
 }
-
+@media screen and (max-width: 870px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 /* -----HEADER------ */
 .container.header {
   display: flex;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 70px;
   margin-bottom: 10px;
 }
 
 @media screen and (max-width: 870px) {
   .container.header {
-    margin-top: 0;
+    margin-top: 90px;
     justify-content: center;
   }
 }
@@ -100,14 +108,28 @@ main {
     flex-direction: column;
   }
 }
-/* .hero-img-bg {
-  width: 685px;
-  border-radius: 532px;
-  background: #fc4343;
-  filter: blur(50px);
-} */
+.hero-img-bg {
+  position: relative;
+}
+.hero-img-bg::after {
+  content: "";
+  position: absolute;
+  top: 20%; /* Задайте нужное значение для вертикального смещения эффекта */
+  left: 5%; /* Задайте нужное значение для горизонтального смещения эффекта */
+  right: 0; /* Задайте нужное значение для горизонтального смещения эффекта */
+  bottom: 0; /* Задайте нужное значение для вертикального смещения эффекта */
+  width: 80%;
+  height: 80%;
+  background: #fc4343; /* Задайте нужный цвет вспышки */
+  border-radius: 50%; /* Чтобы сделать эффект круглой вспышки */
+  filter: blur(50px); /* Задайте нужную степень размытия */
+  z-index: -1; /* Чтобы вспышка находилась под картинкой */
+}
 .hero-img {
   width: 680px;
+}
+.hero-img-small {
+  display: none;
 }
 @media screen and (max-width: 1200px) {
   .hero-img {
@@ -117,26 +139,37 @@ main {
 }
 @media screen and (max-width: 1000px) {
   .hero-img {
+    margin-left: 20px;
     width: 450px;
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 870px) {
   .hero-img {
-    width: 400px;
+    margin-left: 0px;
+    width: 500px;
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 480px) {
+  .hero-img-small {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+  }
+  .hero-img-bg {
+    margin: 0 auto;
+    max-width: none;
+    width: 100%;
+  }
+
   .hero-img {
-    width: 350px;
+    display: none;
+    width: 420px;
+    object-fit: contain;
   }
 }
-@media screen and (max-width: 360px) {
-  .hero-img {
-    width: 320px;
-  }
-}
+
 .hero-title {
   font-size: 60px;
   font-weight: 700;
@@ -160,6 +193,7 @@ main {
 }
 @media screen and (max-width: 870px) {
   .hero-title {
+    margin-top: 30px;
     font-size: 40px;
     text-align: center;
     width: 100%;
@@ -167,7 +201,7 @@ main {
 }
 @media screen and (max-width: 480px) {
   .hero-title {
-    font-size: 32px;
+    font-size: 36px;
   }
 }
 
@@ -216,7 +250,7 @@ main {
 }
 @media screen and (max-width: 480px) {
   .hero-text {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 .btn-hero {
@@ -252,14 +286,19 @@ main {
 
 @media screen and (max-width: 870px) {
   .btn-hero {
-    margin-bottom: 50px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .btn-hero {
-    width: 300px;
-    height: 70px;
-    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 265px;
+    height: 60px;
+    font-size: 17px;
   }
 }
