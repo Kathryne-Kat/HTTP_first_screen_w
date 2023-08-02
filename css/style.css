@@ -152,6 +152,10 @@ main {
   }
 }
 @media screen and (max-width: 480px) {
+  .clok {
+    width: 21px;
+    height: 21px;
+  }
   .hero-img-small {
     margin: 0 auto;
     display: block;
@@ -230,6 +234,7 @@ main {
 .hero-text-flex {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 40px;
 }
 .hero-text {
