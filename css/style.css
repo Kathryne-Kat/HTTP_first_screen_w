@@ -92,7 +92,7 @@ main {
 
 @media screen and (max-width: 870px) {
   .container.header {
-    margin-top: 90px;
+    margin-top: 0;
     justify-content: center;
   }
 }
@@ -157,8 +157,8 @@ main {
     height: 21px;
   }
   .hero-img-small {
+    /* display: block; */
     margin: 0 auto;
-    display: block;
     width: 100%;
   }
   .hero-img-bg {
@@ -168,8 +168,10 @@ main {
   }
 
   .hero-img {
-    display: none;
-    width: 420px;
+    /* display: none; */
+    margin: 0 auto;
+    max-width: none;
+    width: 100%;
     object-fit: contain;
   }
 }
@@ -197,7 +199,7 @@ main {
 }
 @media screen and (max-width: 870px) {
   .hero-title {
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 40px;
     text-align: center;
     width: 100%;
@@ -251,6 +253,7 @@ main {
 }
 @media screen and (max-width: 870px) {
   .hero-text-flex {
+    margin-top: 20px;
     margin-bottom: 30px;
   }
   .hero-text {
