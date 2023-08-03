@@ -77,12 +77,22 @@ address {
   padding-right: 15px;
   margin: 0 auto;
 }
-
+@media screen and (max-width: 1460px) {
+  .hero-img {
+    width: 750px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .hero-img {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 @media screen and (max-width: 870px) {
   .container {
     padding-left: 0;
     padding-right: 0;
-    /* flex-grow: 1; */
     height: 100%;
   }
 }
