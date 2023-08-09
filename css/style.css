@@ -78,16 +78,8 @@ address {
   margin: 0 auto;
 }
 @media screen and (max-width: 1460px) {
-  .hero-img {
-    width: 750px;
-    margin: 0 auto;
-  }
 }
 @media screen and (max-width: 1280px) {
-  .hero-img {
-    width: 100%;
-    margin: 0 auto;
-  }
 }
 @media screen and (max-width: 870px) {
   .container {
@@ -104,10 +96,19 @@ address {
   margin-bottom: 10px;
 }
 
+.page-header-s {
+  display: none;
+}
 @media screen and (max-width: 870px) {
   .container.header {
     margin-top: 0;
     justify-content: center;
+  }
+  .page-header {
+    display: none;
+  }
+  .page-header-s {
+    display: block;
   }
 }
 
@@ -148,7 +149,13 @@ address {
 .hero-img-small {
   display: none;
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1460px) {
+  .hero-img {
+    width: 750px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1280px) {
   .hero-img {
     width: 100%;
     margin: 0 auto;
@@ -158,8 +165,13 @@ address {
 @media screen and (max-width: 870px) {
   .hero-img {
     margin-left: 0px;
-    width: 500px;
+    width: 100%;
     margin: 0 auto;
+  }
+  .hero-img-bg {
+    margin: 0 auto;
+    max-width: 500px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -167,8 +179,13 @@ address {
     width: 21px;
     height: 21px;
   }
+  .hero-img {
+    display: none;
+  }
   .hero-img-small {
+    display: block;
     margin: 0 auto;
+
     width: 100%;
   }
   .hero-img-bg {
@@ -216,6 +233,7 @@ address {
 @media screen and (max-width: 480px) {
   .hero-title {
     font-size: 36px;
+    margin-top: 0;
   }
 }
 .hero-title-flex {
@@ -337,7 +355,7 @@ address {
   .btn-hero {
     display: block;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     width: 280px;
     height: 60px;
     font-size: 17px;
