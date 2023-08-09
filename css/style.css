@@ -63,17 +63,12 @@ address {
   flex-direction: column;
   justify-content: space-between;
 }
-
 .container {
   width: 100%;
   max-width: 1400px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-}
-@media screen and (max-width: 1460px) {
-}
-@media screen and (max-width: 1280px) {
 }
 @media screen and (max-width: 870px) {
   .container {
@@ -89,7 +84,6 @@ address {
   margin-top: 70px;
   margin-bottom: 10px;
 }
-
 .page-header-s {
   display: none;
 }
@@ -107,7 +101,6 @@ address {
 }
 
 /* -----HERO------ */
-
 .flex-container {
   display: flex;
   justify-content: space-between;
@@ -179,7 +172,6 @@ address {
   .hero-img-small {
     display: block;
     margin: 0 auto;
-
     width: 100%;
   }
   .hero-img-bg {
@@ -328,12 +320,6 @@ address {
 @media screen and (max-width: 1200px) {
   .btn-hero {
     display: block;
-    /* margin: 0 auto; */
-    margin-bottom: 30px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .btn-hero {
     margin-bottom: 10px;
   }
 }
