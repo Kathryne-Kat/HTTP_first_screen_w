@@ -131,7 +131,7 @@ address {
   z-index: -1; /* Чтобы вспышка находилась под картинкой */
 }
 .hero-img {
-  width: 900px;
+  width: 850px;
 }
 .hero-img-small {
   display: none;
